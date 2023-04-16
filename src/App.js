@@ -14,7 +14,7 @@ function Header() {
 }
 function Menu() {
   return (
-    <div class="row pt-5">
+    <div class="row pt-5 text-center">
       <div class="col">
         T-Shirt
       </div>
@@ -29,32 +29,32 @@ function Menu() {
 }
 function Image({src, alt}) {
   return (
-    <img class="img-fluid" src={src} alt={alt}/>
+    <img class="" width="100%" height="" src={src} alt={alt}/>
   )
 }
 function Content() {
   return (
     <div>
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-6 px-0">
           <Image src="products/15821305868982.jpg" alt="Picture#1"/>
         </div>
-        <div class="col-sm-6">
-          <Image src="products/15821305870368.jpg" alt="Picture#2"/>
+        <div class="col-sm-6 px-0">
+          <Image src="products/TD Black.jpg" alt="Picture#2"/>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-3 px-0">
           <Image src="products/15911930477723.jpg" alt="Picture#3"/>
         </div>
-        <div class="col-sm-3">
-          <Image src="products/17733430811798.jpg" alt="Picture#4"/>
+        <div class="col-sm-3 px-0">
+          <Image src="products/Mix.jpg" alt="Picture#4"/>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 px-0">
           <Image src="products/17806898429480.jpg" alt="Picture#5"/>
         </div>
-        <div class="col-sm-3">
-          <Image src="products/17916092820744.jpg" alt="Picture#6"/>
+        <div class="col-sm-3 px-0">
+          <Image src="products/Shorts.jpg" alt="Picture#6"/>
         </div>
       </div>
     </div>
@@ -62,14 +62,14 @@ function Content() {
 }
 function Copyright() {
   return (
-    <div class="h6 small text-black-50 border">
+    <div class="h6 small text-black-50 border-top">
       &copy; TEMPTD 2023
     </div>
   )
 }
 function Footer() {
   return (
-    <div class="">
+    <div class="text-center">
       <div class="row">
         <div class="col">
           Instagram
@@ -87,7 +87,7 @@ function Footer() {
 }
 function App() {
   return (
-    <div class="container-fluid">
+    <div class="container-fluid px-0">
       <Header />
       <Content />
       <Footer />
