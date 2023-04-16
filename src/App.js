@@ -62,8 +62,8 @@ function Content() {
 }
 function Copyright() {
   return (
-    <div class="h6 small text-black-50 border-top">
-      &copy; TEMPTD 2023
+    <div class="mt-2 h6 small text-black-50 border-top border-dark">
+      &copy; Temptd 2023
     </div>
   )
 }
@@ -85,7 +85,7 @@ function Footer() {
           contact us
         </div>
       </div>
-       <Copyright />
+      <Copyright />
     </div>
   )
 }
