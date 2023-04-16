@@ -34,7 +34,7 @@ function Image({src, alt}) {
 }
 function Content() {
   return (
-    <div>
+    <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6 px-0">
           <Image src="products/15821305868982.jpg" alt="Picture#1"/>
@@ -91,7 +91,7 @@ function Footer() {
 }
 function App() {
   return (
-    <div class="container-fluid px-0">
+    <div class="container-fluid px-0 mx-0">
       <Header />
       <Content />
       <Footer />
