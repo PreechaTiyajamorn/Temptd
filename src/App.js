@@ -72,13 +72,17 @@ function Footer() {
     <div class="text-center">
       <div class="row">
         <div class="col">
-          Instagram
+          <a href="https://instagram.com/temptdofficial">
+            instagram
+          </a>
         </div>
         <div class="col">
-          Facebook
+          <a href="https://facebook.com/temptdofficial">
+            facebook
+          </a>
         </div>
         <div class="col">
-          Contact Us
+          contact us
         </div>
       </div>
        <Copyright />
