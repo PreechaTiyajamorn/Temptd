@@ -89,15 +89,6 @@ function Footer() {
     </div>
   )
 }
-function Test() {
-  return (
-    <>
-      <div class="bg-primary text-white d-flex justify-content-between align-items-center"style={{height:100}}>
-        CCC
-      </div>
-    </>
-  )
-}
 function App() {
   return (
     <div class="container-fluid px-0 mx-0">
