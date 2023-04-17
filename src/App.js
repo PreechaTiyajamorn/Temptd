@@ -92,20 +92,6 @@ function Footer() {
 function Test() {
   return (
     <>
-      <div class="w3-container w3-red w3-cell">
-        <p>Hello W3.CSS Layout.</p>
-        <p>Hello W3.CSS Layout.</p>
-        <p>Hello W3.CSS Layout.</p>
-        <p>Hello W3.CSS Layout.</p>
-      </div>
-
-      <div class="w3-container w3-green w3-cell w3-cell-middle">
-        <p>Hello W3.CSS Layout.</p>
-      </div>
-
-      <div class="w3-container w3-blue w3-cell w3-cell-bottom">
-        <p>Hello W3.CSS Layout.</p>
-      </div>
       <div class="bg-primary text-white d-flex justify-content-between align-items-center"style={{height:100}}>
         CCC
       </div>
