@@ -6,7 +6,7 @@ function Logo() {
 }
 function Header() {
   return (
-    <div className="sticky-top bg-black text-white " style={{height:100}}>
+    <div className="sticky-top bg-black text-white " style={{height:105}}>
       <table>
         <tbody>
           <tr>
@@ -31,7 +31,7 @@ function MenuItem({item}) {
 }
 function Menu() {
   return (
-    <div className="row text-center" style={{height:100}}>
+    <div className="row text-center" style={{height:105}}>
       <MenuItem item="T-Shirt" />
       <MenuItem item="Shorts" />
       <MenuItem item="Cap" />
@@ -69,7 +69,7 @@ function Content() {
 }
 function Copyright() {
   return (
-    <div className="mt-2 h6 small text-black-50 border-top border-dark" style={{height:100}}>
+    <div className="mt-2 h6 small text-black-50 border-top border-dark">
       &copy; Temptd 2023
     </div>
   )
