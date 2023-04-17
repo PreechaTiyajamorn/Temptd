@@ -1,89 +1,85 @@
 
 function Logo() {
   return (
-    <img class="float-start" width="327" height="100" src="logo.png" alt="Temptd" />
+    <img className="float-start" width="327" height="100" src="logo.png" alt="Temptd" />
   );
 }
 function Header() {
   return (
-    <div class="bg-black text-white " style={{height:100}}>
+    <div className="sticky-top bg-black text-white " style={{height:100}}>
       <Logo />
       <Menu />
     </div>
   )
 }
+function MenuItem({item}) {
+  return (
+    <div className="col-sm-4 d-flex justify-content-between align-items-center">
+      {item}
+    </div>
+  )
+}
 function Menu() {
   return (
-    <div class="row text-center" style={{height:100}}>
-      <div class="col-sm-4 d-flex justify-content-between align-items-center">
-        T-Shirt
-      </div>
-      <div class="col-sm-4 d-flex justify-content-between align-items-center">
-        Shorts
-      </div>
-      <div class="col-sm-4 d-flex justify-content-between align-items-center">
-        Cap
-      </div>
+    <div className="row text-center" style={{height:100}}>
+      <MenuItem item="T-Shirt" />
+      <MenuItem item="Shorts" />
+      <MenuItem item="Cap" />
     </div>
   )
 }
 function Image({src, alt}) {
   return (
-    <img class="" width="100%" height="" src={src} alt={alt}/>
+    <img className="" width="100%" height="" src={src} alt={alt}/>
+  )
+}
+function Product({src, alt, width}) {
+  const className = "col-sm-" + width + " px-0";
+  return (
+    <div className={className}>
+      <Image src={src} alt={alt}/>
+    </div>
   )
 }
 function Content() {
   return (
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-6 px-0">
-          <Image src="products/15821305868982.jpg" alt="Picture#1"/>
-        </div>
-        <div class="col-sm-6 px-0">
-          <Image src="products/TD Black.jpg" alt="Picture#2"/>
-        </div>
+    <div className="container-fluid">
+      <div className="row">
+        <Product src="products/15821305868982.jpg" alt="Picture#1" width={6} />
+        <Product src="products/TD Black.jpg" alt="Picture#2" width={6} />
       </div>
-      <div class="row">
-        <div class="col-sm-3 px-0">
-          <Image src="products/15911930477723.jpg" alt="Picture#3"/>
-        </div>
-        <div class="col-sm-3 px-0">
-          <Image src="products/Mix.jpg" alt="Picture#4"/>
-        </div>
-        <div class="col-sm-3 px-0">
-          <Image src="products/17806898429480.jpg" alt="Picture#5"/>
-        </div>
-        <div class="col-sm-3 px-0">
-          <Image src="products/Shorts.jpg" alt="Picture#6"/>
-        </div>
+      <div className="row">
+        <Product src="products/15911930477723.jpg" alt="Picture#1" width={3} />
+        <Product src="products/Mix.jpg" alt="Picture#1" width={3} />
+        <Product src="products/17806898429480.jpg" alt="Picture#1" width={3} />
+        <Product src="products/Shorts.jpg" alt="Picture#1" width={3} />
       </div>
     </div>
   )
 }
 function Copyright() {
   return (
-    <div class="mt-2 h6 small text-black-50 border-top border-dark">
+    <div className="mt-2 h6 small text-black-50 border-top border-dark">
       &copy; Temptd 2023
+    </div>
+  )
+}
+function FooterItem({item, href}) {
+  return (
+    <div className="col">
+      <a href={href}>
+        {item}
+      </a>
     </div>
   )
 }
 function Footer() {
   return (
-    <div class="text-center">
-      <div class="row">
-        <div class="col">
-          <a href="https://instagram.com/temptdofficial">
-            instagram
-          </a>
-        </div>
-        <div class="col">
-          <a href="https://facebook.com/temptdofficial">
-            facebook
-          </a>
-        </div>
-        <div class="col">
-          contact us
-        </div>
+    <div className="text-center">
+      <div className="row">
+        <FooterItem item="instagram" href="https://instagram.com/temptdofficial" />
+        <FooterItem item="facebook" href="https://facebook.com/temptdofficial" />
+        <FooterItem item="contact us" href="mailto:preech@hotmail.co.uk" />
       </div>
       <Copyright />
     </div>
@@ -91,12 +87,17 @@ function Footer() {
 }
 function App() {
   return (
-    <div class="container-fluid px-0 mx-0">
+    <div className="container-fluid px-0 mx-0">
       <Header />
       <Content />
       <Footer />
+      <Test />
     </div>
   );
 }
-
+function Test() {
+  return (
+    <Menu />
+  )
+}
 export default App;
