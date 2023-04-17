@@ -7,14 +7,24 @@ function Logo() {
 function Header() {
   return (
     <div className="sticky-top bg-black text-white " style={{height:100}}>
-      <Logo />
-      <Menu />
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <Logo />
+            </td>
+            <td width="100%">
+              <Menu />
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   )
 }
 function MenuItem({item}) {
   return (
-    <div className="col-sm-4 d-flex justify-content-between align-items-center">
+    <div className="col-sm-4 d-flex align-items-center justify-content-center">
       {item}
     </div>
   )
@@ -59,7 +69,7 @@ function Content() {
 }
 function Copyright() {
   return (
-    <div className="mt-2 h6 small text-black-50 border-top border-dark">
+    <div className="mt-2 h6 small text-black-50 border-top border-dark" style={{height:100}}>
       &copy; Temptd 2023
     </div>
   )
@@ -91,13 +101,7 @@ function App() {
       <Header />
       <Content />
       <Footer />
-      <Test />
     </div>
   );
-}
-function Test() {
-  return (
-    <Menu />
-  )
 }
 export default App;
