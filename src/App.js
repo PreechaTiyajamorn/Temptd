@@ -85,7 +85,7 @@ function FooterItem({item, href}) {
 }
 function Footer() {
   return (
-    <div className="text-center">
+    <div className="text-center bg-light">
       <div className="row">
         <FooterItem item="instagram" href="https://instagram.com/temptdofficial" />
         <FooterItem item="facebook" href="https://facebook.com/temptdofficial" />
