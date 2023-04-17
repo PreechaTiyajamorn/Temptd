@@ -1,12 +1,12 @@
 
 function Logo() {
   return (
-    <img class="float-start" width="409" height="126" src="logo.png" alt="Temptd" />
+    <img class="float-start" width="327" height="100" src="logo.png" alt="Temptd" />
   );
 }
 function Header() {
   return (
-    <div class="bg-black text-white" style={{height:126}}>
+    <div class="bg-black text-white " style={{height:100}}>
       <Logo />
       <Menu />
     </div>
@@ -14,14 +14,14 @@ function Header() {
 }
 function Menu() {
   return (
-    <div class="row pt-5 text-center">
-      <div class="col">
+    <div class="row text-center" style={{height:100}}>
+      <div class="col-sm-4 d-flex justify-content-between align-items-center">
         T-Shirt
       </div>
-      <div class="col">
+      <div class="col-sm-4 d-flex justify-content-between align-items-center">
         Shorts
       </div>
-      <div class="col">
+      <div class="col-sm-4 d-flex justify-content-between align-items-center">
         Cap
       </div>
     </div>
@@ -87,6 +87,29 @@ function Footer() {
       </div>
       <Copyright />
     </div>
+  )
+}
+function Test() {
+  return (
+    <>
+      <div class="w3-container w3-red w3-cell">
+        <p>Hello W3.CSS Layout.</p>
+        <p>Hello W3.CSS Layout.</p>
+        <p>Hello W3.CSS Layout.</p>
+        <p>Hello W3.CSS Layout.</p>
+      </div>
+
+      <div class="w3-container w3-green w3-cell w3-cell-middle">
+        <p>Hello W3.CSS Layout.</p>
+      </div>
+
+      <div class="w3-container w3-blue w3-cell w3-cell-bottom">
+        <p>Hello W3.CSS Layout.</p>
+      </div>
+      <div class="bg-primary text-white d-flex justify-content-between align-items-center"style={{height:100}}>
+        CCC
+      </div>
+    </>
   )
 }
 function App() {
