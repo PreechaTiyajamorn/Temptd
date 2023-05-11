@@ -1,12 +1,12 @@
 
 function Logo() {
   return (
-    <img className="float-start" width="327" height="100" src="logo.png" alt="Temptd" />
+    <img className="float-start" width="327" height="100" src="transparent.png" alt="Temptd" />
   );
 }
 function Header() {
   return (
-    <div className="sticky-top bg-black text-white " style={{height:105}}>
+    <div className="fixed-top bg-transparent text-white " style={{height:105}}>
       <table>
         <tbody>
           <tr>
@@ -24,7 +24,7 @@ function Header() {
 }
 function MenuItem({item}) {
   return (
-    <div className="col-sm-4 d-flex align-items-center justify-content-center">
+    <div className="col-sm-3 d-flex align-items-center justify-content-center">
       {item}
     </div>
   )
@@ -32,9 +32,10 @@ function MenuItem({item}) {
 function Menu() {
   return (
     <div className="row text-center" style={{height:105}}>
-      <MenuItem item="T-Shirt" />
-      <MenuItem item="Shorts" />
-      <MenuItem item="Cap" />
+      <MenuItem item="Unisex" />
+      <MenuItem item="Women" />
+      <MenuItem item="Men" />
+      <MenuItem item="Accessories" />
     </div>
   )
 }
