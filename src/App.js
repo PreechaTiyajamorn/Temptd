@@ -1,7 +1,7 @@
 
 function Logo() {
   return (
-    <img className="float-start" width="327" height="100" src="transparent.png" alt="Temptd" />
+    <img className="float-start" width="160" height="50" src="transparent.png" alt="Temptd" />
   );
 }
 function Header() {
@@ -13,8 +13,11 @@ function Header() {
             <td>
               <Logo />
             </td>
-            <td width="100%">
+            <td width="60%">
               <Menu />
+            </td>
+            <td width="40%">
+              <Function />
             </td>
           </tr>
         </tbody>
@@ -36,6 +39,23 @@ function Menu() {
       <MenuItem item="Women" />
       <MenuItem item="Men" />
       <MenuItem item="Accessories" />
+    </div>
+  )
+}
+function FunctionItem({item}) {
+  return (
+    <div className="col-sm-3 d-flex align-items-center justify-content-center">
+      {item}
+    </div>
+  )
+}
+function Function() {
+  return (
+    <div className="row text-center" style={{height:105}}>
+      <FunctionItem item="Search" />
+      <FunctionItem item="Account" />
+      <FunctionItem item="Cart" />
+      <FunctionItem item="o" />
     </div>
   )
 }
