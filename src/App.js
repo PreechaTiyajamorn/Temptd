@@ -55,14 +55,23 @@ function Content() {
   return (
     <div className="container-fluid">
       <div className="row">
-        <Product src="products/15821305868982.jpg" alt="Picture#1" width={6} />
-        <Product src="products/TD Black.jpg" alt="Picture#2" width={6} />
+        <Product src="products/Untitled Capture2304.jpg" alt="Picture#1" width={6} />
+        <Product src="products/Untitled Capture0086 1.jpg" alt="Picture#2" width={6} />
       </div>
       <div className="row">
-        <Product src="products/15911930477723.jpg" alt="Picture#1" width={3} />
-        <Product src="products/Mix.jpg" alt="Picture#1" width={3} />
-        <Product src="products/17806898429480.jpg" alt="Picture#1" width={3} />
-        <Product src="products/Shorts.jpg" alt="Picture#1" width={3} />
+        <Product src="products/Untitled Capture8964.jpg" alt="Picture#1" width={6} />
+        <Product src="products/Untitled Capture6841.jpg" alt="Picture#2" width={6} />
+      </div>
+      <div className="row">
+        <Product src="products/Untitled Capture0181.jpg" alt="Picture#1" width={3} />
+        <Product src="products/Untitled Capture3468.jpg" alt="Picture#1" width={3} />
+        <Product src="products/Untitled Capture4521.jpg" alt="Picture#1" width={3} />
+        <Product src="products/Untitled Capture2354.jpg" alt="Picture#1" width={3} />
+      </div>
+      <div className="row">
+        <Product src="products/rufearoflove-05.png" alt="Picture#1" width={4} />
+        <Product src="products/rufearoflove-06.png" alt="Picture#1" width={4} />
+        <Product src="products/rufearoflove-04.png" alt="Picture#1" width={4} />
       </div>
     </div>
   )
