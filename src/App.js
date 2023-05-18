@@ -68,7 +68,7 @@ function Product({src, alt, width}) {
   const className = "col-sm-" + width + " px-0";
   return (
     <div className={className}>
-      <Image src={src} alt={alt}/>
+      <Image src={src} alt={alt} loading="lazy"/>
     </div>
   )
 }
